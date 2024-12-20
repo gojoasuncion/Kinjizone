@@ -401,7 +401,7 @@ Highcharts.chart('container', {
         headerFormat: '',
         pointFormat:
             '<span style="color:{point.color}">\u25cf</span> ' +
-            '{point.name}: <b>{point.percentage:.1f}%</b>'
+            '{point.name}: <b>{point.percentage:.0f}%</b>'
     },
     accessibility: {
         point: {
@@ -415,7 +415,7 @@ Highcharts.chart('container', {
             cursor: 'pointer',
             dataLabels: {
                 enabled: true,
-                format: '<b>{point.name}</b><br>{point.percentage}%',
+                format: '<b>{point.name}</b><br>{point.percentage:.0f}%',
                 distance: 20
             }
         }
